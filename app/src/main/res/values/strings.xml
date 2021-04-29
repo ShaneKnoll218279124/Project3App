@@ -1,0 +1,21 @@
+<resources>
+
+    //Main Menu
+    <string name="app_name">safe</string>
+    <string name="main_sos">SOS</string>
+    <string name="main_fake_call">FAKE CALL</string>
+    <string name="main_live_location">LIVE LOCATION</string>
+    <string name="main_emerg_services">EMERGENCY SERVICES</string>
+
+    //Settings
+    <string name="account">ACCOUNT</string>
+    <string name="sos_setup">SOS SETUP</string>
+    <string name="live_location">LIVE LOCATION</string>
+    <string name="emergency_services">EMERGENCY SERVICES</string>
+    <string name="about_app">ABOUT APP</string>
+    <string name="log_out">LOG OUT</string>
+
+    //SOS
+    <string name="sos_message">HELP IS ON THE WAY</string>
+
+</resources>
