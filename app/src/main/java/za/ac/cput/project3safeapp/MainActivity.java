@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         sosButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SosActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ConfirmSosActivity.class);
                 startActivity(intent);
             }
         });
