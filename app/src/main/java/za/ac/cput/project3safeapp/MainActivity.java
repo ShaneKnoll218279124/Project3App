@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button fakeCallButton = (Button) findViewById(R.id.btnFakeCall);
-//        fakeCallButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), fakeCallActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button fakeCallButton = (Button) findViewById(R.id.btnFakeCall);
+        fakeCallButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), FakeCallActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Button liveLocationButton = (Button) findViewById(R.id.btnLiveLocation);
         liveLocationButton.setOnClickListener(new View.OnClickListener() {
@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button emergencyServButton = (Button) findViewById(R.id.btnEmerServices);
-//        emergencyServButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), EmergencyServicesActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        Button emergencyServButton = (Button) findViewById(R.id.btnEmerServices);
+        emergencyServButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), EmergencyServicesActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

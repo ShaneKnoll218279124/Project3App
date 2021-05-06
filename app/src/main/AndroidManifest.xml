@@ -10,8 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3App">
         <activity
-            android:name=".ConfirmSosActivity"
+            android:name=".FakeCallActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".EmergencyServicesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ConfirmSosActivity"
+            android:exported="true" />
         <activity
             android:name=".SettingsEmergencyServicesActivity"
             android:exported="true" />
