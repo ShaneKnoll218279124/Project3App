@@ -24,14 +24,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button sos_button = (Button) findViewById(R.id.btnSos);
-        sos_button.setOnClickListener(new View.OnClickListener() {
+        Button sosButton = (Button) findViewById(R.id.btnSos);
+        sosButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SosActivity.class);
                 startActivity(intent);
             }
         });
+
+//        Button fakeCallButton = (Button) findViewById(R.id.btnFakeCall);
+//        fakeCallButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), fakeCallActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+        Button liveLocationButton = (Button) findViewById(R.id.btnLiveLocation);
+        liveLocationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LiveLocationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        Button emergencyServButton = (Button) findViewById(R.id.btnEmerServices);
+//        emergencyServButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getApplicationContext(), EmergencyServicesActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 
 

@@ -10,10 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3App">
         <activity
-            android:name=".SosActivity"
+            android:name=".SettingsEmergencyServicesActivity"
             android:exported="true"></activity>
         <activity
+            android:name=".SettingsAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LiveLocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SosActivity"
+            android:exported="true" />
+        <activity
             android:name=".SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingsAboutActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

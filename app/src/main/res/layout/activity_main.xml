@@ -55,7 +55,7 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/settingsBtnLiveLocation"
+            android:id="@+id/btnLiveLocation"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_margin="20dp"
