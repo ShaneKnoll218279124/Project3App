@@ -32,15 +32,15 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//
-//        Button settingsSosButton = (Button) findViewById(R.id.);
-//        settingsSosButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), .class);
-//                startActivity(intent);
-//            }
-//        });
+
+        Button settingsSosButton = (Button) findViewById(R.id.settingsBtnSOS);
+        settingsSosButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CircleSetUpActivity.class);
+                startActivity(intent);
+            }
+        });
 
 //        Button settingsLiveLocButton = (Button) findViewById(R.id.);
 //        settingsLiveLocButton.setOnClickListener(new View.OnClickListener() {

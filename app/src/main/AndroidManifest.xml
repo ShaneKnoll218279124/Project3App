@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="za.ac.cput.project3safeapp">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3App">
         <activity
-            android:name=".FakeCallActivity"
+            android:name=".CircleSetUpActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".FakeCallActivity"
+            android:exported="true" />
         <activity
             android:name=".EmergencyServicesActivity"
             android:exported="true" />
