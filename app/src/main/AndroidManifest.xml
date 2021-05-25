@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project3App">
         <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".CircleSetUpActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".FakeCallActivity"
             android:exported="true" />
@@ -42,7 +45,7 @@
             android:name=".SettingsAboutActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

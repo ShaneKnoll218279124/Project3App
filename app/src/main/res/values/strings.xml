@@ -46,4 +46,11 @@
     <string name="return_call_message">If your fake call was interrupted by a real call, use this option to continue the conversation</string>
     <string name="circle_heading">Add Contacts to your circle</string>
 
+    //Login
+    <string name="welcome">Welcome!</string>
+    <string name="login_fname">FIRST NAME</string>
+    <string name="login_lname">LAST NAME</string>
+    <string name="login_number">PHONE NUMBER</string>
+    <string name="login">LOGIN</string>
+
 </resources>
