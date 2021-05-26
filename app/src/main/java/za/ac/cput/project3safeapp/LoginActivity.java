@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -23,10 +24,6 @@ public class LoginActivity extends AppCompatActivity {
         loginPhoneNumber = findViewById(R.id.editTextLoginNumber);
         btnLogin = findViewById(R.id.btnLogin);
 
-//        if (!(loginFirstName.getText().equals("")) && !(loginLastName.getText().equals("")) && !(loginPhoneNumber.getText().equals(""))) {
-//            btnLogin.setVisibility(View.VISIBLE);
-//        }
-
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,5 +31,9 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
     }
 }

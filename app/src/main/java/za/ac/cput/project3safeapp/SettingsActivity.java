@@ -2,6 +2,7 @@ package za.ac.cput.project3safeapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -69,13 +70,13 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
-//        Button settingsLogOutButton = (Button) findViewById(R.id.);
-//        settingsLogOutButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), .class);
-//                startActivity(intent);
-//            }
-//        });
+        Button settingsLogOutButton = (Button) findViewById(R.id.settingsBtnLogout);
+        settingsLogOutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), LogoutActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
