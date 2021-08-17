@@ -1,14 +1,13 @@
 package za.ac.cput.project3safeapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class LoginActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class AddActivity extends AppCompatActivity {
 
     EditText loginFirstName, loginLastName, loginPhoneNumber;
     Button btnLogin;
@@ -25,14 +24,13 @@ public class LoginActivity extends AppCompatActivity {
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent);
+            public void onClick(View view) {
+                MyDatabaseHelper myDB = new MyDatabaseHelper(AddActivity.this);
+                myDB.addLogin(
+                        loginFirstName.getText().toString().trim(),
+                        loginLastName.getText().toString().trim(),
+                        Integer.parseInt(loginPhoneNumber.getText().toString().trim() ) );
             }
         });
-    }
-
-    @Override
-    public void onBackPressed() {
     }
 }
