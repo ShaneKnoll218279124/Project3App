@@ -16,10 +16,10 @@
 
     //Settings - Account
     <string name="settings_account_account_info">ACCOUNT INFO</string>
-    <string name="settings_account_first_name">FIRST NAME</string>
-    <string name="settings_account_last_name">LAST NAME</string>
-    <string name="settings_account_phone_number">PHONE NUMBER</string>
-    <string name="settings_account_enter_here">Enter here</string>
+    <string name="settings_account_first_name">FIRST NAME:</string>
+    <string name="settings_account_last_name">LAST NAME:</string>
+    <string name="settings_account_phone_number">PHONE NUMBER:</string>
+    <string name="settings_account_enter_here">Update here</string>
     <string name="settings_account_save">SAVE</string>
 
     //Settings - About

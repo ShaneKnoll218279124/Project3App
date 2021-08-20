@@ -6,7 +6,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
-
 import org.jetbrains.annotations.Nullable;
 
 
@@ -32,7 +31,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String query = " CREATE TABLE " + TABLE_NAME +
                 " ( " +
-                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                 COLUMN_NAME + " TEXT," +
                 COLUMN_SURNAME + " TEXT," +
                 COLUMN_NUMBER + " INTEGER(10)" + ");";
@@ -59,5 +58,16 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
             Toast.makeText(context, "Failed.", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(context, "Added Successfully!", Toast.LENGTH_SHORT).show(); }
+    }
+
+    Cursor readData(){
+        String query = "SELECT * FROM " + TABLE_NAME;
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor = null;
+        if(db != null){
+            cursor = db.rawQuery(query, null);
+        }
+        return cursor;
     }
 }
