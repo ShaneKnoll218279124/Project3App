@@ -3,6 +3,7 @@ package za.ac.cput.project3safeapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,10 +25,14 @@ public class EmergencyServicesActivity extends AppCompatActivity {
             }
         });
 
+        int ambulanceNumber = 10177; // Should fetch from database
         Button btnAmbulance = (Button) findViewById(R.id.btnAmbulance);
         btnAmbulance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:"+ ambulanceNumber));
+                startActivity(callIntent);
             }
         });
 
@@ -49,6 +54,9 @@ public class EmergencyServicesActivity extends AppCompatActivity {
         btnNeighbourWatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:"+ 100)); //Test
+                startActivity(callIntent);
             }
         });
     }
