@@ -41,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                         loginPhoneNumber.length() == 10 &&
                         loginPhoneNumberVerify.length() != 0) {
                     if(number.equals(numberVerify)) {
+                        setUpTables();
                         addUser(firstName, lastName, number);
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
@@ -67,6 +68,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private void toastMessage(String message) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
+    }
+
+    private void setUpTables() {
+        mDatabaseHelper.clearTables(); // Clears the table in the event of new install
+        mDatabaseHelper.fillEmergencyServices();
     }
 
     @Override
