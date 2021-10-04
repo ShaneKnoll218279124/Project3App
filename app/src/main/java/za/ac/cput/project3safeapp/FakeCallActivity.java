@@ -27,22 +27,6 @@ public class FakeCallActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//        Button newCallBtn = (Button) findViewById(R.id.btnNewCall);
-//        newCallBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        Button returnCallBtn = (Button) findViewById(R.id.btnReturnCall);
-//        returnCallBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                startActivity(intent);
-//            }
-//        });
     }
 
     public void play (View v){
