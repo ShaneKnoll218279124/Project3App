@@ -25,7 +25,7 @@
     //Settings - About
     <string name="about_app">ABOUT APP</string>
     <string name="about_app_header">About App</string>
-    <string name="about_app_text">The safe app was created to give south africans a way to keep their loved ones in the loop when they are in a dangerous situation.\n\nBy using tracking software, storing important numbers and using minimal data, the safe app provides few, by mighty, options to help its user.</string>
+    <string name="about_app_text">The safe app was created to give south africans a way to keep their loved ones in the loop when they are in a dangerous situation.\n\nBy using tracking software, storing important numbers and using minimal data, the safe app provides few, but mighty, options to help its user.</string>
     <string name="student_details">DYLAN KOEVORT: 218088159, DINELLE KOTZE: 219089302\nJONATHAN KLEYNHANS: 217268153, SHANE KNOLL: 218279124\nLLEWELYN KLAASE: 216267072, TISETSO KOTOANA: 217198384</string>
 
     //SOS
@@ -33,11 +33,9 @@
 
     //Live Location
     <string name="share_live_location">SHARE\nLIVE LOCATION</string>
-    <string name="phone_number">Phone Number</string>
-    <string name="enter_message_for_receiver">Enter message for receiver</string>
-    <string name="_2_hours">2 Hours</string>
-    <string name="_1_hour">1 Hour</string>
-    <string name="_30_min">30 Min</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="enter_message_for_receiver">ENTER MESSAGE FOR RECEIVER</string>
+    <string name="live_location_send">Send</string>
 
     //Fake Call
     <string name="new_call">Start Fake Call</string>
