@@ -11,7 +11,4 @@
     <color name="main_menu_buttons">#6599af</color>
     <color name="background">#042534</color>
     <color name="background_settings">#A5AFB3</color>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
 </resources>
