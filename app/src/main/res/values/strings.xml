@@ -16,10 +16,10 @@
 
     //Settings - Account
     <string name="settings_account_account_info">ACCOUNT INFO</string>
-    <string name="settings_account_first_name">FIRST NAME</string>
-    <string name="settings_account_last_name">LAST NAME</string>
-    <string name="settings_account_phone_number">PHONE NUMBER</string>
-    <string name="settings_account_enter_here">Enter here</string>
+    <string name="settings_account_first_name">FIRST NAME:</string>
+    <string name="settings_account_last_name">LAST NAME:</string>
+    <string name="settings_account_phone_number">PHONE NUMBER:</string>
+    <string name="settings_account_enter_here">Update here</string>
     <string name="settings_account_save">SAVE</string>
 
     //Settings - About
@@ -40,10 +40,10 @@
     <string name="_30_min">30 Min</string>
 
     //Fake Call
-    <string name="new_call">New Call</string>
-    <string name="new_call_message">Your phone will ring and you will receive a fake call narrative\n\nRespond as if it were a real conversation</string>
-    <string name="return_call">Return Call</string>
-    <string name="return_call_message">If your fake call was interrupted by a real call, use this option to continue the conversation</string>
+    <string name="new_call">Start Fake Call</string>
+    <string name="new_call_message">Your phone will ring and you will receive a fake call narrative.\n\nRespond as if it were a real conversation.\n\ \n\Click again to continue audio!</string>
+    <string name="return_call">Pause Call</string>
+    <string name="return_call_message">If your fake call was interrupted by a real call, use the Call option to continue the conversation.</string>
     <string name="circle_heading">Add Contacts to your circle</string>
 
     //Login
