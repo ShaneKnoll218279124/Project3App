@@ -3,6 +3,7 @@ package za.ac.cput.project3safeapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,6 +29,9 @@ public class EmergencyServicesActivity extends AppCompatActivity {
         btnAmbulance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:10177"));
+                startActivity(intent);
             }
         });
 
@@ -35,6 +39,9 @@ public class EmergencyServicesActivity extends AppCompatActivity {
         btnPolice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:10111"));
+                startActivity(intent);
             }
         });
 
@@ -42,6 +49,9 @@ public class EmergencyServicesActivity extends AppCompatActivity {
         btnFire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:112"));
+                startActivity(intent);
             }
         });
 
@@ -49,6 +59,9 @@ public class EmergencyServicesActivity extends AppCompatActivity {
         btnNeighbourWatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:0860666662"));
+                startActivity(intent);
             }
         });
     }
