@@ -74,9 +74,4 @@ public class LoginActivity extends AppCompatActivity {
         mDatabaseHelper.clearTables(); // Clears the table in the event of new install
         mDatabaseHelper.fillEmergencyServices();
     }
-
-    @Override
-    public void onBackPressed() {
-        // Implement for when user presses system back button
-    }
 }

@@ -32,8 +32,6 @@ public class LiveLocationActivity extends AppCompatActivity {
     private EditText txtMessage, txtPhoneNumber;
     private Button sendBtn;
 
-    // TODO: NEED TO REFACTOR REQUESTING OF PERMISSIONS
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

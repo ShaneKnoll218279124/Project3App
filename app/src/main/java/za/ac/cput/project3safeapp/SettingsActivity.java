@@ -38,19 +38,19 @@ public class SettingsActivity extends AppCompatActivity {
         settingsSosButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CircleSetUpActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SettingNotImplementedActivity.class);
                 startActivity(intent);
             }
         });
 
-//        Button settingsLiveLocButton = (Button) findViewById(R.id.);
-//        settingsLiveLocButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), .class);
-//                startActivity(intent);
-//            }
-//        });
+        Button settingsLiveLocButton = (Button) findViewById(R.id.btnLiveLocation);
+        settingsLiveLocButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SettingNotImplementedActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Button settingsEmergServButton = (Button) findViewById(R.id.settingsBtnEmergencyServices);
         settingsEmergServButton.setOnClickListener(new View.OnClickListener() {
